@@ -7,7 +7,7 @@ public abstract class Group {
     private final Authentication authentication;
 
     public Group() {
-        this.authentication = new Authentication();
+        this.authentication = new OAuthAuthentication();
     }
 
     public boolean checkLogin(String loginName, Map<LoginRequestType, String> request) {
