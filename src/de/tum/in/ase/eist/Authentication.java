@@ -1,3 +1,7 @@
+package de.tum.in.ase.eist;
+
+import java.util.Map;
+
 public interface Authentication {
-    abstract boolean login(String, Map<LoginRequestType, String>)
+    boolean login(String loginName, Map<LoginRequestType, String> loginRequest);
 }
