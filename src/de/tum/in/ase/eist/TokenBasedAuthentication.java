@@ -2,7 +2,7 @@ package de.tum.in.ase.eist;
 
 import java.util.Map;
 
-public class TokenBasedAuthentication {
+public class TokenBasedAuthentication implements Authentication {
 
     /*
      * DO NOT MODIFY THIS CLASS!

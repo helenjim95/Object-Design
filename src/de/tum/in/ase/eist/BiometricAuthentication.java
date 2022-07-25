@@ -2,7 +2,7 @@ package de.tum.in.ase.eist;
 
 import java.util.Map;
 
-public class BiometricAuthentication {
+public class BiometricAuthentication implements Authentication {
 
     public boolean login(String loginName, Map<LoginRequestType, String> loginRequest) {
         String signature = loginRequest.get(LoginRequestType.SIGNATURE);

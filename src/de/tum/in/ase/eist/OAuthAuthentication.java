@@ -2,7 +2,7 @@ package de.tum.in.ase.eist;
 
 import java.util.Map;
 
-public class OAuthAuthentication {
+public class OAuthAuthentication implements Authentication {
 
     public boolean login(String loginName, Map<LoginRequestType, String> loginRequest) {
         String token = loginRequest.get(LoginRequestType.OAUTH_TOKEN);

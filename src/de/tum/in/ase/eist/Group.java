@@ -2,15 +2,15 @@ package de.tum.in.ase.eist;
 
 import java.util.Map;
 
-public class Group {
+public abstract class Group {
 
-    private final OAuthAuthentication oAuthAuthentication;
+    private final Authentication authentication;
 
     public Group() {
-        this.oAuthAuthentication = new OAuthAuthentication();
+        this.authentication = new Authentication();
     }
 
     public boolean checkLogin(String loginName, Map<LoginRequestType, String> request) {
-        return oAuthAuthentication.login(loginName, request);
+        return authentication.login(loginName, request);
     }
 }

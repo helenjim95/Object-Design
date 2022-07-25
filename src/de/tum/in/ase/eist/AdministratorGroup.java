@@ -1,5 +1,8 @@
 package de.tum.in.ase.eist;
 
-public class AdministratorGroup {
-    // TODO
+public class AdministratorGroup extends Group {
+    @Override
+    public Group() {
+        this.authentication = new BiometricAuthentication();
+    }
 }
